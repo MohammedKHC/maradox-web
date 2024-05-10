@@ -1,2 +1,2 @@
 # Maradox
-Just Trying to be a game
+Just trying to be a game

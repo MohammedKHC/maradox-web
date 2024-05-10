@@ -1,0 +1,10 @@
+{
+    "name": "Maradox",
+    "short_name": "Maradox",
+    "start_url": ".",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Game without Game Engine By Me",
+    "orientation": "landscape"
+}

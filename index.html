@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json">
+  <title>Maradox</title>
+  <link rel="icon" type="image/x-icon"
+    href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body,
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    canvas {
+      display: block;
+      outline: none;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    /*if (/(android)/i.test(navigator.userAgent)) {
+      var script = document.createElement('script');
+      script.src = "https://cdn.jsdelivr.net/npm/eruda";
+      document.body.append(script);
+      script.onload = function () {
+        eruda.init();
+      }
+    }*/
+  </script>
+  <script type="module">
+    import init from "./maradox.js";
+    init().then(() => {
+      console.log("WASM Loaded");
+    });
+  </script>
+</body>
+
+</html>
